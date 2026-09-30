@@ -1,0 +1,11 @@
+stages:
+  - test
+
+test_application:
+  stage: test
+  image: ubuntu:latest
+
+  script:
+    - echo "Running GitLab CI..."
+    - test -f index.html
+    - echo "All tests passed!"
